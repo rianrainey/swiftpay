@@ -7,6 +7,7 @@ gem "rails", "~> 7.1.3", ">= 7.1.3.2"
 gem "pg"
 gem "devise"
 gem "administrate"
+gem "tailwindcss-rails"
 
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
@@ -56,6 +57,8 @@ group :development, :test do
 end
 
 group :development do
+  gem "hotwire-livereload"
+  gem "rails_live_reload", "~> 0.3.6"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
@@ -71,3 +74,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+

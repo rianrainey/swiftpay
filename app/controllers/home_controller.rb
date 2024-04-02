@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    render html: "Hello, world!"
+    render :index
   end
 end
 
